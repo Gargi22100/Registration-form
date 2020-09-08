@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form validation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+
+    }
+    body {
+     background: #00FF00;
+     font-family: 'Josefin Sans', sans-serif;
+     max-height: 2500px;
+
+    }
+    .wrapper {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     max-width: 900px;
+     width: 120%;
+     background: #fff;
+     padding: 25px;
+     border-radius: 5px;
+     box-shadow: 4px 4px 2px rgba(254, 236, 154, 1);
+     max-height: 2000px;
+     margin-top: 20px;
+    }
+    .wrapper h1 {
+     text-align: center;
+     letter-spacing: 3px;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+     color: #FF0000;
+     padding-top: 150px;
+
+    }
+    .wrapper .left {
+     float: left;
+     width: 45%;
+    }
+    .input-ield input[type="text"]  {
+     width: 100%;
+     border: 1px solid #e0e0e0;
+
+     padding: 10px;
+     margin-bottom: 10px;
+    }
+
+    .wrapper .btn button{
+     border: 0;
+     margin-top: 5px;
+     padding: 10px;
+     width: 50%;
+     background: #fece0c;
+     color: #332902;
+     text-transform: uppercase;
+     letter-spacing: 5px;
+     font-weight: bold;
+     border-radius: 25px;
+     cursor: pointer;
+     margin-left: 200px;
+     margin-bottom: 60px;
+    }
+    .wrapper .error-message {
+     margin-bottom: 20px;
+     padding: 0px;
+     background: #f38b8e;
+     text-align: center;
+     font-size: 14px;
+     transition: all 0.5s ease;
+
+    }
+    .Gender {
+     font-family: 'Roboto', sans-serif !important;
+     font-weight: lighter;
+    }
+    .wrapper .right {
+     float: right;
+     width: 45%
+    }
+    </style>
+
+   </head>
+  <body>
+    <div class="wrapper">
+      <h1>Registration Form </h1>
+      <div id="error-message"></div>
+    <form class="" id="myform" action="index.html" method="post" >
+      <div class="left">
+      <div class="input-ield">
+          <input type="text" placeholder=" Name of the student" id="name" value="" required>
+        </div>
+
+        <div class="input-ield ">
+          <input type="text" placeholder="Date of birth ex.dd/mm/yy"  id="subject" value="">
+      </div>
+
+
+      <div class="input-ield">
+        <input type="text" placeholder="Father's Name"  id="father" value="" >
+    </div>
+    <div class="input-ield">
+      <input type="text" placeholder="Father's mobile no."  id="fatherphn" value="">
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="Permanent addresss"  id="add" value="">
+</div>
+<div class="input-ield gender">
+<input type="text" placeholder="Gender"  id="gen" value="">
+</div>
+
+
+
+<div class="input-ield">
+  <input type="text" placeholder="10th percentage"  id="" value="">
+</div>
+<div class="input-ield">
+  <input type="text" placeholder="Year of passing"  id="" value="">
+</div>
+<div class="input-ield">
+  <input type="text" placeholder="Board"  id="" value="">
+</div>
+
+  <div class="input-ield">
+  <input type="text" placeholder="10+2 percentage"  id="" value="">
+</div>
+<div class="input-ield">
+  <input type="text" placeholder="Year of passing"  id="" value="" >
+</div>
+<div class="input-ield">
+  <input type="text" placeholder="Board"  id="" value="" >
+</div>
+<div class="input-ield">
+  <input type="text" placeholder="Diploma(if any)Year of passing "  id="" value="" >
+</div>
+
+
+</div>
+<div class="right">
+  <div class="input-ield ">
+      <input type="text" placeholder="University Roll no" id="roll no" value="" >
+    </div>
+  <div class="input-ield">
+    <input type="text" placeholder="Email"  id="email" value="" >
+</div>
+<div class="input-ield ">
+    <input type="text" placeholder="Mobile no"  id="phone" value="" >
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="B.Tech Branch"  id="" value="" >
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="Section"  id="" value="" >
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="1st sem%"  id="" value="" >
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="2nd sem%"  id="" value="" >
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="3rd sem%"  id="" value="" >
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="4th sem%"  id="" value="" >
+  </div>
+
+  <div class="input-ield">
+    <input type="text" placeholder="Gap in education"  id="" value="" >
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="Current backs(write no. if any otherwise 0)"  id="" value="" >
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="internship company name"  id="" value="" >
+  </div>
+  <div class="input-ield">
+    <input type="text" placeholder="skill set learned during internship"  id="" value="" >
+  </div>
+</div>
+      <div class="btn">
+        <button type="submit" name="button">submit</button>
+      </div>
+
+      </form>
+
+    </div>
+
+    <script>
+      const dob = document.getElementById("subject");
+      const fathername = document.getElementById("father");
+      const fatherph = document.getElementById("fatherphn");
+      const address = document.getElementById("add");
+      const gender=document.getElementById("gen");
+      const roll=document.getElementById("roll no");
+      const email=document.getElementById("email");
+      const phn=document.getElementById("phone");
+      const myform = document.getElementById("myform");
+      const errorElement=document.getElementById("error-message");
+      myform.addEventListener('submit',(e)=>{
+        let messages=[]
+        if(dob.value==='' ||dob.value==null){
+          messages.push('enter valid dob')
+        }
+        if(fathername.value.length<=6){
+          messages.push('enter valid name')
+        }
+        if(fatherph.value==='' ||fatherph.value==null){
+          messages.push('enter valid phone')
+        }
+        if(address.value==='' ||address.value==null){
+          messages.push('enter valid address')
+        }
+        if(gender.value==='' ||gender.value==null){
+          messages.push('enter valid gender')
+        }
+        if(roll.value==='' ||roll.value==null){
+          messages.push('enter valid number')
+        }
+        if(email.value==='' ||email.value==null){
+          messages.push('enter valid email')
+        }
+        if(phn.value==='' ||phn.value==null){
+          messages.push('enter valid phone')
+        }
+
+        if(messages.length >0){
+          e.preventDefault()
+          errorElement.innerText=messages.join(', ')
+        }
+
+      })
+    </script>
+    </body>
+</html>
